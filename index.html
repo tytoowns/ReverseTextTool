@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reverse Text Tool</title>
+  <meta name="description" content="String Reverser Task">
+  <meta name="author" content="Jason McCreery">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1 id="title">Reverse Text Tool</h1>
+	</div>
+	
+	<!--Input Type Form-->
+	<div class="container">
+		<div class="form-group">
+			<div class="selector-label">
+				<h3>Input</h3>
+				<p>Choose how you want to input data</p>			
+			</div>
+			<div class="selector">
+				<div class="selection selection-input selected" id="inputFormTextField">Text Field</div>
+				<div class="selection selection-input">Text File</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Text Input-->
+	<div class="container" id="text-input">
+		<textarea class="text-area" id="reverse-text-input" rows="10" placeholder="Please enter the text you want to reverse"></textarea>
+	</div>
+	
+	<!--File Input-->
+	<div class="container" id="file-input">
+		<div class="form-group">
+			<div class="selector-label">
+				<label for="myfile">Please select a .txt file:</label>		
+			</div>
+			<div class="selector">
+				<input type="file" id="myfile" name="myfile">
+			</div>
+		</div>
+	</div>
+	
+	<!--Output Type Form-->
+	<div class="container">
+		<div class="form-group">
+			<div class="selector-label">
+				<h3>Output</h3>
+				<p>Choose how you want to output data</p>			
+			</div>
+			<div class="selector">
+				<div class="selection selection-output selected" id="output-text-option">Text Field</div>
+				<div class="selection selection-output">Text File</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Reverse Text Button-->
+	<div class="container">
+		<a class="ghost_btn" id="reverseTextBtn"href="#">Reverse Text</a>
+	</div>
+	
+	<!--Text Output-->
+	<div class="container" id="text-output">
+		<textarea class="text-area" id="reverse-text-output" rows="10" placeholder="reversed text will output here"></textarea>
+	</div>	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="js/stringReverse.js"></script>
+</body>
+</html>
